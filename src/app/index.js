@@ -1,11 +1,19 @@
 import React from "react";
 import {render} from "react-dom";
+import {Header} from "components/Header";
+import {Home} from "components/Home";
 
 class App extends React.Component{
     render() {
         return (
-            <div>
-                <h1>Hello From Virtual Base!</h1>
+            <div className="container">
+                <div className="row">
+                <Header/>
+                </div>
+
+                <div className="row">
+                <Home/>
+                </div>
             </div>
         );
     }
