@@ -4,15 +4,9 @@ export class Header extends React.Component {
     render() {
 
          return(
-             <nav className="navbar navbar-default">
-                <div className="container">
-                    <div  className="navbar-header">
-                        <ul className="nav navbar-nav">
-                            <li><a href="#">Home</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+             <nav className="navbar navbar-light bg-faded">
+                 <h1 className="navbar-brand mb-0">Navbar</h1>
+             </nav>
 
     );
 

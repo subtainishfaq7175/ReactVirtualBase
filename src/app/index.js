@@ -1,10 +1,14 @@
 import React from "react";
 import {render} from "react-dom";
-import {Header} from "components/Header";
-import {Home} from "components/Home";
+import { Header } from "./components/Header";
+import { Home } from "./components/Home";
 
 class App extends React.Component{
     render() {
+        var user = {
+          location: "Multan",
+          country: "Pakistan"
+        };
         return (
             <div className="container">
                 <div className="row">
@@ -12,7 +16,7 @@ class App extends React.Component{
                 </div>
 
                 <div className="row">
-                <Home/>
+                <Home name={"max"} age={27} user={user}/>
                 </div>
             </div>
         );
